@@ -38,27 +38,22 @@ This Power BI report demonstrates a smart, **DAX-driven dynamic hierarchy** in *
 
 PowerBI-Dynamic-Drilldown/
 ├── PBIX File/
-│ └── DynamicMatrixDrilldown.pbix
-│
+│   └── DynamicMatrixDrilldown.pbix
 ├── Dax/
-│ ├── Dynamic_Total_Sales_Hierarchy.txt
-│ ├── New_Total_Sales_Year.txt
-│ ├── New_Total_Sales_Quarter.txt
-│ └── New_Total_Sales_Month.txt
-│
+│   ├── Dynamic_Total_Sales_Hierarchy.txt
+│   ├── New_Total_Sales_Year.txt
+│   ├── New_Total_Sales_Quarter.txt
+│   └── New_Total_Sales_Month.txt
 ├── Screenshots/
-│ ├── Month.png
-│ ├── Quarter.png
-│ ├── Year.png
-│ └── All Together.png
-│
+│   ├── Month.png
+│   ├── Quarter.png
+│   ├── Year.png
+│   └── All_Together.png
 ├── Demo/
-│ └── MatrixDrilldownDemo.mp4
-|
+│   └── MatrixDrilldownDemo.mp4
 ├── Dataset/
-│  └── Sample_Dataset.xlsx
-
-
+│   └── Sample_Dataset.xlsx
+└── README.md
 
 ---
 
