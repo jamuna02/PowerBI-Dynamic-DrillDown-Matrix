@@ -1,0 +1,14 @@
+### New_Total_Sales_Year 
+
+
+```dax
+IF(
+    SELECTEDVALUE('New DateTable'[Year]) = MAX(DateTable[Year]),
+    [Total Sales],
+    IF(
+        SELECTEDVALUE('New DateTable'[Year]) <> MAX(DateTable[Year]) &&
+        ISINSCOPE(
+            DateTable[MonthName]), BLANK(),
+            [Total Sales]
+    )
+) ```

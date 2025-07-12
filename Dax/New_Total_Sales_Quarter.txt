@@ -1,0 +1,14 @@
+### New_Total_Sales_Quarter 
+
+
+```dax
+IF(
+    SELECTEDVALUE('New DateTable'[Quarter]) = MAX(DateTable[Quarter]),
+    [Total Sales],
+    IF(
+        SELECTEDVALUE('New DateTable'[Quarter]) <> MAX(DateTable[Quarter]) &&
+        ISINSCOPE(
+            DateTable[MonthName]), BLANK(),
+            [Total Sales]
+    )
+) ```

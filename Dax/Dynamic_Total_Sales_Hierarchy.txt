@@ -1,0 +1,39 @@
+### Dynamic_Total_Sales_Hierarchy
+
+```dax
+VAR SelectedYear = SELECTEDVALUE('New DateTable'[Year])
+VAR SelectedQuarter = SELECTEDVALUE('New DateTable'[Quarter])
+VAR SelectedMonth = SELECTEDVALUE('New DateTable'[MonthName])
+
+RETURN
+SWITCH(
+    TRUE(),
+
+    //  Day level — Show only for selected Month & Year
+    ISINSCOPE('DateTable'[Day]) &&
+    SelectedYear = MAX('DateTable'[Year]) &&
+    SelectedMonth = MAX('DateTable'[MonthName]),
+        [Total Sales],
+
+    //  Month level — Show only for selected Quarter & Year
+    ISINSCOPE('DateTable'[MonthName]) &&
+    NOT(ISINSCOPE('DateTable'[Day])) &&
+    SelectedYear = MAX('DateTable'[Year]) &&
+    SelectedQuarter = MAX('DateTable'[Quarter]),
+        [Total Sales],
+
+    //  Quarter level — Show only for selected Year
+    ISINSCOPE('DateTable'[Quarter]) &&
+    NOT(ISINSCOPE('DateTable'[MonthName])) &&
+    SelectedYear = MAX('DateTable'[Year]),
+        [Total Sales],
+
+    //  Year level
+    ISINSCOPE('DateTable'[Year]) &&
+    NOT(ISINSCOPE('DateTable'[Quarter])) &&
+    NOT(ISINSCOPE('DateTable'[MonthName])) &&
+    NOT(ISINSCOPE('DateTable'[Day])),
+        [Total Sales],
+
+    BLANK()
+) ```
