@@ -38,7 +38,7 @@ This Power BI report demonstrates a smart DAX-driven solution that enables **dyn
 ## 🙋 Author
 
 **Your Name**  
-LinkedIn Profile: linkedin.com/in/jamuna-s-9b3a19358
+LinkedIn Profile: linkedin.com/in/jamuna-s-9b3a19358/
 Email Address: jamuna.official08@gmail.com
 
 ## 🏷️ Tags
