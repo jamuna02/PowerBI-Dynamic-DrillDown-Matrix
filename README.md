@@ -22,9 +22,15 @@ This Power BI report demonstrates a smart DAX-driven solution that enables **dyn
 - Power BI Desktop (.pbix)
 - DAX (Data Analysis Expressions)
 
-## 📷 Demo Screenshot
+## 📷 Demo Screenshots
 
-![Matrix Drill-Down Demo](images/demo-screenshot.png)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/807230af-7ab5-4ecb-acd9-79dc6d00594c" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/078fd8f3-7e43-47fd-ab1f-c8a76e8753f1" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8e71fa09-46cc-4d38-8271-fe51c3942912" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b331151f-7873-4ce6-9d9d-e1e381408e98" />
+
+
+
 
 > Replace the above with an actual screenshot in the `images/` folder
 
